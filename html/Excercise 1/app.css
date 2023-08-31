@@ -1,0 +1,10 @@
+.container {
+    display: inline-block;
+    width: 50%; /* Adjust the width as needed */
+    vertical-align: top; /* Aligns the content at the top */
+  }
+
+  section, aside {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
