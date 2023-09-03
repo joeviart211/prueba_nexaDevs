@@ -12,12 +12,12 @@
     background: #59aaa5;
     height: 100%;
   }
-  /* #name{
+  #name{
     margin-left: 20px;
     background: #59aaa5;
     height: 100%;
     color: white;
-  } */
+  }
   .container{
     width: 60%;
     margin-left: 20px;
@@ -55,6 +55,14 @@
   
   
  }
+#items{
+    width: 100%px;
+    height: auto;
+}
+.img-fluid {
+
+ width: auto;
+}
 
   </style>
 </head>
@@ -71,16 +79,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Contact</a>
-          </li>
-          
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Contact</a>
+              </li>
+              
           
         </ul>
         
@@ -89,26 +97,33 @@
   </nav>
 
 <div class="container p-3 bg-white">
-<h2  style="color: #59aaa5;">Contact </h2>
+<h2  style="color: #59aaa5;">Portfolio</h2>
 <section  class="my-3" style="border-top: solid;">
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Your Email">
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    
+
   
 
- 
+
+
+  <div class="d-row d-flex">
+    <div class="col-md-5 m-1 justify-content-center">
+        <img  id="items" src="technics-q-c-640-480-1.jpg" alt="Image 1" class="img-fluid">
+    </div>
+    <div class="col-md-5 m-1">
+        <img  id="items" src="technics-q-c-640-480-2.jpg" alt="Image 2" class="img-fluid">
+    </div>
+   </div>
+   <div class="d-row d-flex">
+    <div class="col-md-5 justify-content-center">
+        <img  id="items" src="technics-q-c-640-480-5.jpg" alt="Image 2" class="img-fluid">
+    </div>
+    <div class="col-md-5 m-1">
+        <img  id="items" src="technics-q-c-640-480-7.jpg" alt="Image 2" class="img-fluid">
+    </div>
+</div>
+    <div class="col-md-5 m-1">
+        <img  id="items" src="technics-q-c-640-480-9.jpg" alt="Image 2" class="img-fluid">
+    </div>
 </section>
 </div>
 </div>

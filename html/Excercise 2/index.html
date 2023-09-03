@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
   <style>
   .fakeimg {
     height: 200px;
@@ -13,62 +13,111 @@
   }
   #header{
     background: #59aaa5;
+    height: 100%;
+  }
+  #name{
+    margin-left: 20px;
+    background: #59aaa5;
+    height: 100%;
+    color: white;
+  }
+  .container{
+    width: 60%;
+    margin-left: 20px;
+
   }
   
-  img{
-    width:50%;
-    height: auto ;
+  #cat{
+     float: left;
+     margin: 5px; 
+     width: 40%; 
+     height: auto;
+  }
+  @media screen and (max-width:780px) {
+    .container{
+    width: 80%;
+    margin: auto;
 
   }
-  @media screen and (max-width: 640px) {
-  img{
-    width: 100%
+  #cat{
+    float: left;
+     margin: 5px; 
+     width: 30%; 
+     height: auto;
   }
 }
+@media screen and (max-width:640px) {
+  #cat{
+     width: 100%; 
+     height: auto;
+  }
+}  
+ #footer{
+  border-top: solid #53a7a2;
+  border-width: 10px;
+  
+  
+ }
+
   </style>
 </head>
-<body>
+<body style="background-color: #c3c3c3;" >
 
-<div id="header" class="p-5  text-white text-center">
-  <h1>José Alberto Viart de la Peña </h1>
- 
-</div>
 
-<nav class="navbar navbar-expand-sm ">
-  <div class="container-fluid justify-content-center">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a> 
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col">
-      <h2>About Me</h2>
-        <img  src="cat.jpg" alt="">
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      
-      
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
+    <div class="container-fluid">
+      <a id="name" class="navbar-brand p-2"  href="#">José Viart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Contact</a>
+          </li>
+          
+          
+        </ul>
+        
+      </div>
     </div>
-    
+  </nav>
+
+<div class="container p-3 bg-white">
+<h2  style="color: #59aaa5;">About Me</h2>
+<section  class="my-3" style="border-top: solid;">
+  
+
+  <div class="my-3">
+    <img src="cat.jpg"  id="cat" >
   </div>
+
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error delectus numquam dolores, at iusto, iure accusamus quia dolorem tenetur eveniet repudiandae nobis adipisci dolor similique, quaerat dolorum modi culpa. Molestias?s</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error delectus numquam dolores, at iusto, iure accusamus quia dolorem tenetur eveniet repudiandae nobis adipisci dolor similique, quaerat dolorum modi culpa. Molestias?s</p>
+
+
+
+
+  </div>
+</section>
+</div>
 </div>
 
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
 
+ <footer id="footer" class="footer mt-5 p-4 bg-dark text-white text-center">
+        
+            <span >@copyright</span>
+        
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
